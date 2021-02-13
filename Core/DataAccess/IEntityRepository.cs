@@ -1,11 +1,12 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
+    //**Core katmanı diğer katmanları referans almaz.**
     //Generic constraint:Generic kısıt demek.Yani T yerine göndereceğimiz nesneyi kısıtlarız.Burada sadece Entitiesdeki nesnelerimin gelmesini istiyorum.
     //class:Sadece referans tip gönderiyorum demek.
     //Yani T hem referans tip olacak hemde IEntity olacak veya IEntity implemente eden bir nesne olabilir.
