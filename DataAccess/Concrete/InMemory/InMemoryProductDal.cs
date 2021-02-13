@@ -1,5 +1,6 @@
 ﻿using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,6 +76,11 @@ namespace DataAccess.Concrete.InMemory
         {
             //Kategori id'sine göre bütün elamanları gezer ve eşit olan id ye göre o id ye sahip bütün ürünleri getirir.
             return _products.Where(p => p.CategoryId == categoryId).ToList();
+        }
+
+        public List<ProductDetailDto> GetProductDetails()
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Product product)
