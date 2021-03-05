@@ -18,5 +18,7 @@ namespace Business.Abstract
         IResult Add(Product product);
         IResult Update(Product product);
         IDataResult<Product> GetById(int productId);
+        //Transactional Yönetimi=>Uygulamalarda tutarlılığı korumak için yaptığımız bir yöntem.
+        IResult AddTransactionalTest(Product product);
     }
 }

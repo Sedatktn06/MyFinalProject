@@ -1,4 +1,4 @@
-﻿using Core;
+﻿ using Core;
 
 namespace Entities.DTOs
 {

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Entities.DTOs
 {
+    //Data Transformation Object
     public class UserForLoginDto : IDto
     {
         public string Email { get; set; }

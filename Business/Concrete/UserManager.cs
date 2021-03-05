@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Core.Entities.Concrete;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace Business.Concrete
 
         public List<OperationClaim> GetClaims(User user)
         {
-            return _userDal.GetClaims(user);
+            return  _userDal.GetClaims(user);
         }
 
         public void Add(User user)
